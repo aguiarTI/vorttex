@@ -1,0 +1,68 @@
+/** ========================
+============================
+@project    : Vorttex
+@version    : 1.0
+@author     : Thiago Aguiar - thiago.aguiar86@gmail.com
+@copyright  : 2016
+============================
+@begin
+=========================**/
+
+.social {
+	background-color: @patternColorText6;
+	margin: 40px auto;
+	padding: 20px 0;
+	h5 {
+		font-family: @TrumanBold;
+		font-size: 1.2em;
+		text-transform: uppercase;
+		color: @patternColorText2;
+	}
+	.corner {
+		&.up {
+			width: 100%;
+			height: 20px;
+			margin: 0;
+			position: absolute;
+			top: -20px;
+			left: 0;
+			overflow: hidden;
+			z-index: 4;
+			span {
+				background-color: transparent;
+				box-shadow: 0 0 0 400px @patternColorText6;
+				border-radius: 88%;
+				width: 100%;
+				height: 52px;
+				position: absolute;
+				top: -150%;
+				left: 0;
+			}
+		}
+		&.down {
+			background-color: transparent;
+			width: 100%;
+			height: 40px;
+			margin: 0;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			overflow: hidden;
+			z-index: 4;
+			span {
+				background-color: transparent;
+				box-shadow: 0 0 0 400px @patternColorText0;
+				border-radius: 100%;
+				width: 104%;
+				height: 90px;
+				position: absolute;
+				top: -50px;
+				left: -25px;
+			}
+		}
+	}
+}
+
+/** ========================
+@end
+=========================**/

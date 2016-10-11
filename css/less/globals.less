@@ -1,0 +1,295 @@
+/** ========================
+============================
+@project    : Vorttex
+@version    : 1.0
+@author     : Thiago Aguiar - thiago.aguiar86@gmail.com
+@copyright  : 2016
+============================
+@begin
+=========================**/
+
+/** ========================
+@pattern
+=========================**/
+body {
+	font-family: @Truman;
+	font-size: @patternTextSize;
+	color: @patternColorText;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	background-color: @patternColorText0;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+section {
+	position: relative;
+}
+p, a, em, i, b, strong, h1, h2, h3, h4, h5, h6, figure, video, img, caption, audio, ul, li, ol, article, table, thead, tbody, th, tr, td {
+	font-weight: normal;
+	font-size: inherit;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	color: inherit;
+	position: relative;
+}
+ul, li, ol, dt, dl {
+	list-style: none;
+	list-style-type: none;
+}
+strong, b {
+	font-family: @TrumanBold;
+}
+img {
+	border: 0;
+	display: block;
+}
+figure {
+	position: relative;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+}
+q:before,
+q:after {
+	 content: '';
+}
+abbr,
+acronym {
+	 border: 0;
+	 font-variant: normal;
+}
+sup {
+	 vertical-align: text-top;
+}
+sub {
+	 vertical-align: text-bottom;
+}
+section {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+h2 {
+	font-family: @TrumanBold;
+	text-transform: uppercase;
+	font-size: 3em;
+	line-height: 1.25em;
+	color: @patternColorText2;
+	text-shadow: 0px -1px 16px rgba(0, 0, 0, 0.62);
+}
+h3 {
+	font-family: @TrumanBold;
+	text-transform: uppercase;
+	font-size: 2em;
+	line-height: 1.25em;
+	color: @patternColorText4;
+	padding: 50px 0;
+}
+h4 {
+	font-family: @TrumanBold;
+	font-size: 1em;
+	line-height: 1em;
+	color: @patternColorText5;
+}
+form {
+	width: 275px;
+	height: auto;
+	position: relative;
+	float: left;
+	margin: 2px 0 0 20px;
+	fieldset {
+		border: 0 none;
+		margin: 0;
+		padding: 0;
+		legend {
+			display: none;
+		}
+	}
+	input,
+	textarea,
+	select {
+		 font-family: inherit;
+		 font-size: inherit;
+		 font-weight: inherit;
+	}
+	input[type="submit"] {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+
+		cursor: pointer;
+		background-color: transparent;
+		.sprite(@ico-search);
+		border: 0 none;
+		width: 20px;
+		height: 20px;
+		margin: -12px 0 0 0;
+		position: absolute;
+		top: 50%;
+		right: 5px;
+		z-index: 1;
+		outline: none;
+	}
+	input,
+	textarea,
+	select {
+		 *font-size: 100%;
+	}
+	label {
+		background-color: @patternColorText2;
+		border: 1px solid @patternColorText9;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		width: 100%;
+		height: 40px;
+		margin: 0 auto;
+		position: relative;
+		display: inline-block;				
+		input[type='text'] {
+			-webkit-transition: all 0.3s ease; 
+			-moz-transition: all 0.3s ease; 
+			-ms-transition: all 0.3s ease; 
+			-o-transition: all 0.3s ease; 
+			transition: all 0.3s ease;
+			background-color: transparent;
+			border: 0 none;
+			font-family: @Truman;
+			font-size: 0.9em;
+			color: @patternColorText14;
+			width: 95%;
+			height: 34px;
+			padding: 2px 2%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			outline: none;
+			&:focus {
+				-webkit-transition: all 0.3s ease; 
+				-moz-transition: all 0.3s ease; 
+				-ms-transition: all 0.3s ease; 
+				-o-transition: all 0.3s ease; 
+				transition: all 0.3s ease;
+				&::-webkit-input-placeholder {
+				  color: @patternColorText10;
+				}
+				&::-moz-placeholder {
+				  color: @patternColorText10;
+				}
+				&::-ms-input-placeholder {
+				  color: @patternColorText10;
+				}
+				&::-moz-placeholder {
+				  color: @patternColorText10;
+				}	
+				color: @patternColorText10;
+			}
+		}		
+	}
+}
+.swiper-slide, .swiper-wrapper {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    -ms-transition-property: -ms-transform;
+    transition-property: transform;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.navigation {
+	text-align: center;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	bottom: 25px;
+	left: 0;
+	z-index: 7;
+	span {
+		background-color: @patternColorText2;
+		border: 1px solid @patternColorText2;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+		filter: alpha(opacity=30);
+		-moz-opacity: 0.3;
+		-khtml-opacity: 0.3;
+		opacity: 0.3;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+		width: 11px;
+		height: 11px;
+		margin: 0 5px;
+		display: inline-block;
+		vertical-align: middle;
+		cursor: pointer;
+		&.swiper-pagination-bullet-active {
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+			filter: alpha(opacity=100);
+			-moz-opacity: 1;
+			-khtml-opacity: 1;
+			opacity: 1;
+			background-color: @patternColorText2;
+		}
+	}
+}
+.button {
+	text-align: center;
+	background-color: @patternColorText3;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	margin: 15px auto 0 auto;
+	display: inline-block;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease; 
+	-ms-transition: all 0.3s ease; 
+	-o-transition: all 0.3s ease; 
+	transition: all 0.3s ease;
+	z-index: 10;
+	&.primary {
+		padding: 20px 95px;	
+	}
+	&.secondary {
+		margin: 50px auto;
+		padding: 15px 45px;
+		span {
+			font-size: 1.2em;
+		}
+	}
+	span {
+		font-family: @TrumanBold;
+		font-size: 1.4em;
+		color: @patternColorText2;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	&:hover {
+		background-color: @patternColorText7;
+	}
+}
+
+/** ========================
+@end
+=========================**/

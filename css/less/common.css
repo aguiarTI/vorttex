@@ -1,0 +1,715 @@
+/** ========================
+============================
+@project    : GasApp
+@version    : 1.0
+@author     : Founder - Thiago Aguiar - thiago.aguiar86@gmail.com
+@copyright  : 2016
+============================
+@begin
+=========================**/
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+*/
+/*
+The `retina-sprite` class sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+@icon-home-group: 'icon-home' @icon-home @icon-home-2x;
+
+.icon-home {
+  .retina-sprite(@icon-home-group);
+}
+*/
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+/*
+The `.retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in LESS
+
+.retina-sprites(@retina-groups);
+*/
+/** ========================
+============================
+@project    : GasApp
+@version    : 1.0
+@author     : Founder - Thiago Aguiar - thiago.aguiar86@gmail.com
+@copyright  : 2016
+============================
+@begin
+=========================**/
+/**====================
+@keyframes
+=======================**/
+/**====================
+	@menu manipulation
+	====================**/
+@-webkit-keyframes mvisibility {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-moz-keyframes mvisibility {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-ms-keyframes mvisibility {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-o-keyframes mvisibility {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes mvisibility {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-webkit-keyframes mhidden {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+@-moz-keyframes mhidden {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+@-ms-keyframes mhidden {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+@-o-keyframes mhidden {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+@keyframes mhidden {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+/** ========================
+@end
+=========================**/
+/** ========================
+============================
+@project    : GasApp
+@version    : 1.0
+@author     : Founder - Thiago Aguiar - thiago.aguiar86@gmail.com
+@copyright  : 2016
+============================
+@begin
+=========================**/
+/**====================
+@debug
+====================**/
+.black {
+  background-color: black;
+}
+.white {
+  background-color: white;
+}
+.gray {
+  background-color: gray;
+}
+.purple {
+  background-color: purple;
+}
+.pink {
+  background-color: pink;
+}
+.orange {
+  background-color: orange;
+}
+.yellow {
+  background-color: yellow;
+}
+/**====================
+@font-family
+====================**/
+/**====================
+@font-size
+====================**/
+/** ========================
+@pattern-text-color
+=========================**/
+/** ========================
+@keyframes
+=========================**/
+/** ========================
+@end
+=========================**/
+/** ========================
+============================
+@project    : GasApp
+@version    : 1.0
+@author     : Founder - Thiago Aguiar - thiago.aguiar86@gmail.com
+@copyright  : 2016
+============================
+@begin
+=========================**/
+/** ========================
+@font-face
+=========================**/
+@font-face {
+  font-family: 'RobotoBlack';
+  src: url('../font/roboto/black/font.eot');
+  src: url('../font/roboto/black/font.eot?#iefix') format('embedded-opentype'), url('../font/roboto/black/font.woff') format('woff'), url('../font/roboto/black/font.ttf') format('truetype'), url('../font/roboto/black/font.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoBlackItalic';
+  src: url('../font/roboto/black_italic/font.eot');
+  src: url('../font/roboto/black_italic/font.eot?#iefix') format('embedded-opentype'), url('../font/roboto/black_italic/font.woff') format('woff'), url('../font/roboto/black_italic/font.ttf') format('truetype'), url('../font/roboto/black_italic/font.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoBold';
+  src: url('../font/roboto/bold/font.eot');
+  src: url('../font/roboto/bold/font.eot?#iefix') format('embedded-opentype'), url('../font/roboto/bold/font.woff') format('woff'), url('../font/roboto/bold/font.ttf') format('truetype'), url('../font/roboto/bold/font.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoBoldItalic';
+  src: url('../font/roboto/bold_italic/font.eot');
+  src: url('../font/roboto/bold_italic/font.eot?#iefix') format('embedded-opentype'), url('../font/roboto/bold_italic/font.woff') format('woff'), url('../font/roboto/bold_italic/font.ttf') format('truetype'), url('../font/roboto/bold_italic/font.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoCondensed';
+  src: url('../font/roboto/condensed/font.eot');
+  src: url('../font/roboto/condensed/font.eot?#iefix') format('embedded-opentype'), url('../font/roboto/condensed/font.woff') format('woff'), url('../font/roboto/condensed/font.ttf') format('truetype'), url('../font/roboto/condensed/font.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoCondensedBold';
+  src: url('../font/roboto/condensed_bold/font.eot');
+  src: url('../font/roboto/condensed_bold/font.eot?#iefix') format('embedded-opentype'), url('../font/roboto/condensed_bold/font.woff') format('woff'), url('../font/roboto/condensed_bold/font.ttf') format('truetype'), url('../font/roboto/condensed_bold/font.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoCondensedBoldItalic';
+  src: url('../font/roboto/condensed_bold_italic/font.eot');
+  src: url('../font/roboto/condensed_bold_italic/font.eot?#iefix') format('embedded-opentype'), url('../font/roboto/condensed_bold_italic/font.woff') format('woff'), url('../font/roboto/condensed_bold_italic/font.ttf') format('truetype'), url('../font/roboto/condensed_bold_italic/font.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoCondensedItalic';
+  src: url('../font/roboto/condensed_italic/font.eot');
+  src: url('../font/roboto/condensed_italic/font.eot?#iefix') format('embedded-opentype'), url('../font/roboto/condensed_italic/font.woff') format('woff'), url('../font/roboto/condensed_italic/font.ttf') format('truetype'), url('../font/roboto/condensed_italic/font.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoCondensedLight';
+  src: url('../font/roboto/condensed_light/font.eot');
+  src: url('../font/roboto/condensed_light/font.eot?#iefix') format('embedded-opentype'), url('../font/roboto/condensed_light/font.woff') format('woff'), url('../font/roboto/condensed_light/font.ttf') format('truetype'), url('../font/roboto/condensed_light/font.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoCondensedLightItalic';
+  src: url('../font/roboto/condensed_light_italic/font.eot');
+  src: url('../font/roboto/condensed_light_italic/font.eot?#iefix') format('embedded-opentype'), url('../font/roboto/condensed_light_italic/font.woff') format('woff'), url('../font/roboto/condensed_light_italic/font.ttf') format('truetype'), url('../font/roboto/condensed_light_italic/font.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoItalic';
+  src: url('../font/roboto/italic/font.eot');
+  src: url('../font/roboto/italic/font.eot?#iefix') format('embedded-opentype'), url('../font/roboto/italic/font.woff') format('woff'), url('../font/roboto/italic/font.ttf') format('truetype'), url('../font/roboto/italic/font.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoLight';
+  src: url('../font/roboto/light/font.eot');
+  src: url('../font/roboto/light/font.eot?#iefix') format('embedded-opentype'), url('../font/roboto/light/font.woff') format('woff'), url('../font/roboto/light/font.ttf') format('truetype'), url('../font/roboto/light/font.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoLightItalic';
+  src: url('../font/roboto/light_italic/font.eot');
+  src: url('../font/roboto/light_italic/font.eot?#iefix') format('embedded-opentype'), url('../font/roboto/light_italic/font.woff') format('woff'), url('../font/roboto/light_italic/font.ttf') format('truetype'), url('../font/roboto/light_italic/font.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoMedium';
+  src: url('../font/roboto/medium/font.eot');
+  src: url('../font/roboto/medium/font.eot?#iefix') format('embedded-opentype'), url('../font/roboto/medium/font.woff') format('woff'), url('../font/roboto/medium/font.ttf') format('truetype'), url('../font/roboto/medium/font.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoMediumItalic';
+  src: url('../font/roboto/medium_italic/font.eot');
+  src: url('../font/roboto/medium_italic/font.eot?#iefix') format('embedded-opentype'), url('../font/roboto/medium_italic/font.woff') format('woff'), url('../font/roboto/medium_italic/font.ttf') format('truetype'), url('../font/roboto/medium_italic/font.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url('../font/roboto/regular/font.eot');
+  src: url('../font/roboto/regular/font.eot?#iefix') format('embedded-opentype'), url('../font/roboto/regular/font.woff') format('woff'), url('../font/roboto/regular/font.ttf') format('truetype'), url('../font/roboto/regular/font.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoThin';
+  src: url('../font/roboto/thin/font.eot');
+  src: url('../font/roboto/thin/font.eot?#iefix') format('embedded-opentype'), url('../font/roboto/thin/font.woff') format('woff'), url('../font/roboto/thin/font.ttf') format('truetype'), url('../font/roboto/thin/font.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoThinItalic';
+  src: url('../font/roboto/thin_italic/font.eot');
+  src: url('../font/roboto/thin_italic/font.eot?#iefix') format('embedded-opentype'), url('../font/roboto/thin_italic/font.woff') format('woff'), url('../font/roboto/thin_italic/font.ttf') format('truetype'), url('../font/roboto/thin_italic/font.svg#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/** ========================
+@pattern
+=========================**/
+html {
+  font-family: 'RobotoRegular';
+  font-size: 1em;
+  color: #555555;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+body {
+  background-color: #FFFFFF;
+  max-width: 550px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+section {
+  position: relative;
+}
+p,
+a,
+em,
+i,
+b,
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+video,
+img,
+caption,
+audio,
+ul,
+li,
+ol,
+article,
+table,
+thead,
+tbody,
+th,
+tr,
+td {
+  font-weight: normal;
+  font-size: inherit;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+ul,
+li,
+ol,
+dt,
+dl {
+  list-style: none;
+  list-style-type: none;
+}
+strong,
+b {
+  font-family: 'RobotoBlack';
+}
+img {
+  border: 0;
+  display: block;
+}
+figure {
+  position: relative;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+}
+q:before,
+q:after {
+  content: '';
+}
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+fieldset {
+  border: 0 none;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+header,
+section,
+footer {
+  max-width: 550px;
+  margin: 0 auto;
+}
+.row {
+  padding: 0 1.8em;
+}
+h2 {
+  font-family: 'RobotoCondensedBold';
+  font-size: 1.7em;
+  text-transform: uppercase;
+  line-height: 1em;
+  color: #444444;
+  margin: 35px 0;
+}
+/** ========================
+@end
+=========================**/
+/** ========================
+============================
+@project    : GasApp
+@version    : 1.0
+@author     : Founder - Thiago Aguiar - thiago.aguiar86@gmail.com
+@copyright  : 2016
+============================
+@begin
+=========================**/
+/** ========================
+@swiper
+=========================**/
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -ms-transition-property: -ms-transform;
+  transition-property: transform;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.swiper-slide,
+.swiper-wrapper {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate(0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.navigation {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  z-index: 1;
+}
+.navigation span {
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.navigation span.swiper-pagination-bullet-active {
+  background-color: #FFFFFF;
+}
+/** ========================
+@end
+=========================**/
+/** ========================
+============================
+@project    : GasApp
+@version    : 1.0
+@author     : Founder - Thiago Aguiar - thiago.aguiar86@gmail.com
+@copyright  : 2016
+============================
+@begin
+=========================**/
+/**====================
+@menu
+====================**/
+#menu {
+  background-color: #000000;
+  width: 75%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 3;
+}
+#menu.open {
+  -webkit-animation: mvisibility 0.3s linear forwards;
+  -moz-animation: mvisibility 0.3s linear forwards;
+  -ms-animation: mvisibility 0.3s linear forwards;
+  -o-animation: mvisibility 0.3s linear forwards;
+  animation: mvisibility 0.3s linear forwards;
+}
+#menu.close {
+  -webkit-animation: mhidden 0.3s linear forwards;
+  -moz-animation: mhidden 0.3s linear forwards;
+  -ms-animation: mhidden 0.3s linear forwards;
+  -o-animation: mhidden 0.3s linear forwards;
+  animation: mhidden 0.3s linear forwards;
+}
+/** ========================
+@end
+=========================**/
+/** ========================
+============================
+@project    : GasApp
+@version    : 1.0
+@author     : Founder - Thiago Aguiar - thiago.aguiar86@gmail.com
+@copyright  : 2016
+============================
+@begin
+=========================**/
+/**====================
+@about us
+====================**/
+.about {
+  display: inline-block;
+}
+.about p {
+  font-family: 'RobotoLight';
+  line-height: 1.5em;
+  text-align: justify;
+  margin: 0 auto 30px auto;
+}
+.about .step {
+  background-color: #FFFFFF;
+  text-align: left;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.about .step nav {
+  width: 100%;
+  height: 70px;
+}
+.about .step nav:before {
+  content: '';
+  background-color: #F10341;
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.about .step nav ul {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+}
+.about .step nav ul li {
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  backface-visibility: hidden;
+  width: 12px;
+  height: 12px;
+  position: relative;
+  display: inline-block;
+  margin: 30px 2px 0 2px;
+}
+.about .step nav ul li.actived {
+  background-color: #FFFFFF;
+}
+.about .step nav ul li:first-child {
+  margin-left: 0;
+}
+.about .step nav ul li:last-child {
+  margin-left: 0;
+}
+.about .content {
+  margin: 70px 0 120px 0;
+}
+.about .go {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+.about .go:before {
+  content: '';
+  background: #FFFFFF;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(transparent, #FFFFFF);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(transparent, #FFFFFF);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(transparent, #FFFFFF);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(transparent, #FFFFFF);
+  /* Standard syntax */
+  width: 100%;
+  height: 160px;
+  position: absolute;
+  top: -160px;
+  left: 0;
+}
+.about .go a {
+  font-family: 'RobotoCondensedBold';
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #444444;
+  display: block;
+}
+.about .go a.back {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px 0px;
+  width: 15px;
+  height: 28px;
+}
+/** ========================
+@end
+=========================**/
+/** ========================
+@end
+=========================**/

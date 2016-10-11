@@ -1,0 +1,199 @@
+/** ========================
+============================
+@project    : Vorttex
+@version    : 1.0
+@author     : Thiago Aguiar - thiago.aguiar86@gmail.com
+@copyright  : 2016
+============================
+@begin
+=========================**/
+
+/**====================
+@sprite and retina
+=======================**/
+@media screen and (max-width: 767px) {
+	body {
+		header {
+			.bar {
+				div {
+					&.lang {
+						ul {
+							&.share {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+			.menu {
+				h1 {
+					margin: 10px auto;
+					display: inline-block;
+				}
+				ul {
+					background-color: @patternColorText2;
+					text-align: left;
+					width: 100%;
+					height: auto;
+					margin: 0;
+					padding: 0;
+					float: none;
+					position: absolute;
+					top: 98px;
+					left: 0;
+					z-index: 100;
+					li {
+						border-bottom: 1px solid @patternColorText6;
+						width: 100%;
+						margin: 0;
+						display: block;
+						a {
+							text-transform: uppercase;
+							padding: 20px;
+							display: inline-block;
+							vertical-align: middle;
+						}
+					}
+				}
+				nav {
+					a {
+						&.list {
+							display: block;
+						}
+					}
+				}
+			}
+			div {
+				&.user {
+					display: none;
+				}
+			}
+		}
+		section {
+			max-width: 550px;
+			h2 {
+				font-size: 1.85em;
+			}
+		}
+		.feature {			
+			ul {
+				li {
+					div {
+						margin-top: -155px;
+						p {
+							padding: 0 30px;
+						}
+					}
+				}
+			}
+		}
+		.action {
+			ul {
+				li {
+					width: 100%;
+					max-width: 292px;
+					margin: 0 auto 40px auto;
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		.formation {
+			div {
+				&.media {
+					height: 330px;
+				}
+			}
+		}
+		.feature, .brief, .institute {
+			.corner {
+				span {
+					width: 110%;
+				}
+			}
+		}
+		.social {
+			.corner {
+				&.down {
+					span {
+						width: 110%;
+					}
+				}
+			}
+		}
+		footer {
+			ul {
+				li {
+					padding: 0 12px;
+					&:after {
+						content: none;
+					}
+					a {
+						text-decoration: underline;
+						padding: 8px 0;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	body {
+		h2 {
+			font-size: 2.4em;
+		}
+		.action {
+			ul {
+				li {
+					width: 29.5%;
+					div {
+						&:last-child {
+							p {
+								&:first-child {
+									padding: 0 0 0 15px;
+								}
+								&:last-child {
+									padding: 0 15px 0 0;	
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.formation {
+			div {
+				&.media {
+					height: 550px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 992px) {
+	body {
+		header {
+			form {
+				display: none;
+			}			
+		}
+	}
+}
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+	body {
+		header {
+			.menu {
+				form {
+					width: 160px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1024px) {}
+@media screen (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {}
+
+/** ========================
+@end
+=========================**/

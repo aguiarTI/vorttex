@@ -1,0 +1,195 @@
+/** ========================
+============================
+@project    : Vorttex
+@version    : 1.0
+@author     : Thiago Aguiar - thiago.aguiar86@gmail.com
+@copyright  : 2016
+============================
+@begin
+=========================**/
+
+.formation {
+	div {
+		padding: 0;
+		&.art {
+			.description {
+				&:after {
+					background-color: @patternColorText6;
+				}
+				.corner {
+					span {
+						box-shadow: 0 0 0 400px @patternColorText6;
+					}
+				}
+			}
+		}
+		&.environment {
+			.description {
+				&:after {
+					background-color: @patternColorText7;
+				}
+				.corner {
+					span {
+						box-shadow: 0 0 0 400px @patternColorText7;
+					}
+				}
+			}
+		}
+		&.kitchen {
+			.description {
+				&:after {
+					background-color: @patternColorText8;
+				}
+				.corner {
+					span {
+						box-shadow: 0 0 0 400px @patternColorText8;
+					}
+				}
+			}
+		}
+		&.other {
+			.description {
+				&:after {
+					background-color: @patternColorText11;
+				}
+				.corner {
+					span {
+						box-shadow: 0 0 0 400px @patternColorText11;
+					}
+				}
+			}
+		}
+		&.topic {
+			position: relative;
+			height: 330px;
+			overflow: hidden;
+			&:hover {
+				.description {
+					bottom: 0;
+				}
+			}
+		}
+		&.media {
+			position: relative;
+			height: 660px;
+			overflow: hidden;
+			&:hover {
+				.description {
+					bottom: 0;
+				}
+			}
+			a {
+				&.play {					
+					-webkit-border-radius: 50%;
+					-moz-border-radius: 50%;
+					border-radius: 50%;
+					width: 110px;
+					height: 110px;
+					position: absolute;
+					margin: -55px 0 0 -55px;
+					top: 50%;
+					left: 50%;
+					overflow: hidden;
+					&:before {
+						content: '';
+						border-top: 30px solid transparent;
+						border-left: 40px solid @patternColorText2;
+						border-bottom: 30px solid transparent;
+						-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+						filter: alpha(opacity=70);
+						-moz-opacity: 0.7;
+						-khtml-opacity: 0.7;
+						opacity: 0.7;
+						margin: -27px 0 0 -12px;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+					}
+					&:after {
+						content: '';
+						background-color: @patternColorText;
+						-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+						filter: alpha(opacity=20);
+						-moz-opacity: 0.2;
+						-khtml-opacity: 0.2;
+						opacity: 0.2;
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						top: 0;
+						left: 0;
+					}
+				}
+			}
+		}
+		.description {			
+			width: 100%;
+			position: absolute;
+			bottom: -85px;
+			left: 0;
+			z-index: 1;
+			word-wrap: break-word;
+			-webkit-transition: all 0.3s ease;
+			-moz-transition: all 0.3s ease; 
+			-ms-transition: all 0.3s ease; 
+			-o-transition: all 0.3s ease; 
+			transition: all 0.3s ease;			
+			&:after {
+				content: '';
+				background-color: @patternColorText;
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+				filter: alpha(opacity=90);
+				-moz-opacity: 0.9;
+				-khtml-opacity: 0.9;
+				opacity: 0.9;
+				width: 100%; 
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			p {
+				font-size: 1.1em;
+				color: @patternColorText2;
+				padding: 20px;
+				z-index: 2;
+			}
+			.corner {
+				width: 100%;
+				height: 20px;
+				margin: 0;
+				position: absolute;
+				top: -20px;
+				left: 0;
+				overflow: hidden;
+				z-index: 4;
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+				filter: alpha(opacity=90);
+				-moz-opacity: 0.9;
+				-khtml-opacity: 0.9;
+				opacity: 0.9;
+				span {
+					background-color: transparent;
+					box-shadow: 0 0 0 400px @patternColorText;
+					border-radius: 88%;
+					width: 100%;
+					height: 52px;
+					position: absolute;
+					top: -150%;
+					left: 0;
+				}
+			}
+			.button {
+				&.secondary {
+					background-color: transparent;
+					border: 1px solid @patternColorText2;
+					margin: 0 auto 20px;
+				}
+			}
+		}
+	}
+}
+
+/** ========================
+@end
+=========================**/
